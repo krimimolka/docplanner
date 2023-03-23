@@ -1,20 +1,27 @@
 body {
-  margin: 0;
+  margin: 0px;
   padding: 0;
   color: #747474;
   font-weight: 400;
   font-family: "Work Sans", Arial, sans-serif;
 }
-nav {
-  background: white;
-  height: 15%;
-  width: 100%;
-  font-size: 0.9375rem;
-  line-height: 2em;
-  position: fixed;
-  top: 0;
-  box-shadow: 0 -2px 10px 0 rgb(0 0 0 )
+.list{
+   height: 60%;
+  width: 65%;
+  display: inline-block;
 }
+ul{
+  margin-top: 0px;
+  margin-right:  90px;
+}
+#first{
+ 
+  margin-top:10px;
+  width: 300px;
+  height: 200%;
+  padding-left: 20%;
+}
+
 
 nav ul {
   float: right;
@@ -36,9 +43,6 @@ nav ul ul {
   top: 70px;
   opacity: 0;
   visibility: hidden;
-  background: #fff;
-  box-shadow: 0 10px 20px 0 #d3cfc9;
-  
 }
 nav ul ul li {
   position: relative;
@@ -47,22 +51,18 @@ nav ul ul li {
   float: none;
   display: list-item;
   box-shadow: lightseagreen;
-  
 }
 nav ul ul ul li {
   position: relative;
   top: -70px;
   left: 150px;
-  
 }
 nav ul li a:hover {
   color: #00b39b;
-   
 }
 nav ul li:hover > ul {
   opacity: 0.7;
   visibility: visible;
-
 }
 a {
   text-decoration: none;
@@ -70,11 +70,9 @@ a {
 .active {
   color: #00b39b;
 }
-.logo {
-  width: 20%;
-  height: 30%;
-  padding-left: 20%;
-}
+
+
+
 .section1 {
   display: flex;
   flex-direction: column;
@@ -140,7 +138,7 @@ a {
 }
 .description-container {
   width: 478px;
- line-height: 1.75;
+  line-height: 1.75;
   margin: 25px;
   white-space: normal;
 }
@@ -152,7 +150,7 @@ a {
   flex-direction: row;
   justify-content: center;
 }
-.box1{
+.box1 {
   width: 340px;
   height: 391px;
   max-width: 340px;
@@ -216,14 +214,16 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   font-size: 0;
-  list-style: none;
-  width: 67%;
+   width: 67%;
+}
+li{
+  list-style: none;  
 }
 
 .brands {
   display: flex;
   align-items: center;
-  justify-content: space-evenly ;
+  justify-content: space-evenly;
   margin-top: 50px;
   margin-left: 10vw;
 }
@@ -245,24 +245,22 @@ a {
   align-items: center;
   justify-content: center;
   width: 80%;
-
 }
 
 .logos > ul > li > svg {
   height: 150px;
   width: 150px;
   margin-right: 25px;
-:<
 }
-.h3{
+.h3 {
   color: #00b39b;
 }
-.states{ 
-   display: flex;
+.states {
+  display: flex;
   background: #e5faf8;
   padding: 1.875em 0 0.625em;
   overflow: hidden;
-  margin: 3.125rem auto 5.5rem;
+  
   width: 100%;
 }
 
@@ -282,9 +280,9 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 12vw 
- }
- .vert-align {
+  margin-left: 80px;
+}
+.vert-align {
   background-color: #fff;
   width: 228px;
   height: 200px;
@@ -292,26 +290,30 @@ a {
   margin-top: 31px;
   padding: 15px;
   text-align: center;
-  border:0.2px solid #00b39b;
-margin: 5px;
+  border: 0.2px solid #00b39b;
+  margin: 5px;
 }
 
-#img{
-  background-image:url('./assets/logo.png');
+#img {
+  background-image: url("./assets/logo.png");
   background-repeat: no-repeat;
-  max-width:100%;
-max-height:100%;
+  max-width: 100%;
+  max-height: 100%;
+background-position: bottom 5px right 7px;
+padding-bottom: 500px;
+margin-right:15px ;
 }
-.text{
- text-align: center;
- margin: 40px;}
+.text {
+  text-align: center;
+  margin: 40px;
+}
 
- .images{
+.images {
   margin-right: 5px;
   margin-left: 5px;
   padding: 3px;
- }
- .offices__slider{
+}
+.offices__slider {
   justify-content: center;
   column-gap: 100px;
   padding: 90px;
@@ -320,30 +322,41 @@ max-height:100%;
   grid-template-columns: repeat(3, 1fr);
   grid-row-gap: 40px;
   grid-column-gap: 00px;
-  margin: 50px; 
+  margin: 50px;
   margin-top: 5px;
 }
 
-  .photo{
-    width: 200px;
-    height: 250px;
-    margin-top: 31px;
-  }
-   .office__image{
+.photo {
+  width: 200px;
+  height: 250px;
+  margin-top: 31px;
+}
+.office__image {
   background-color: #fff;
   border: 2px solid rgba(61, 61, 61, 0.308);
   border-radius: 10px;
-   width:310px;
-  height: 280px;  
+  width: 310px;
+  height: 280px;
 }
+.main-footer{
+  margin-left: 500px;
+  justify-content: center;
+}
+.seemore-btn {
+  border: 0;
+  border-radius: 4px;
+  padding: 10px 10px;
+  margin-left: 200px;
+  background: #3d83df;
+  line-height: 1em;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
 
-.office__desc{
+  font-size: 0.75rem;
   text-align: center;
 }
-
-.h5{
+.office__desc {
   text-align: center;
-  color:aqua;
 }
 
 
